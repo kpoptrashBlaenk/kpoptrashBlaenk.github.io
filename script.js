@@ -31,7 +31,14 @@ let champions = {
     Akshan: 'Akshan',
     Ekko: 'Ekko',
     Shen: 'Shen',
-    Annie: 'Annie'
+    Annie: 'Annie',
+    Mundo: 'Mundo',
+    Jax: 'Jax',
+    Renekton: 'Renekton',
+    Morgana: 'Morgana',
+    Diana: 'Diana'
+
+
 }
 
 let matches = {
@@ -165,72 +172,48 @@ let matches = {
             T1: {
                 P1: {
                     name: players.Z,
-                    champion: champions.None
+                    champion: champions.Yasuo
                 },
                 P2: {
                     name: players.Franco,
-                    champion: champions.None
+                    champion: champions.Mundo
                 },
                 win: false
             },
             T2: {
                 P1: {
                     name: players.Chrome,
-                    champion: champions.None
+                    champion: champions.Aatrox
                 },
                 P2: {
                     name: players.Blaenk,
-                    champion: champions.None
+                    champion: champions.Jax
                 },
-                win: false
+                win: true
             }
         },
         R2: {
             T1: {
                 P1: {
                     name: players.Z,
-                    champion: champions.None
+                    champion: champions.Renekton
                 },
                 P2: {
                     name: players.Franco,
-                    champion: champions.None
+                    champion: champions.Morgana
                 },
                 win: false
             },
             T2: {
                 P1: {
                     name: players.Chrome,
-                    champion: champions.None
+                    champion: champions.Vayne
                 },
                 P2: {
                     name: players.Blaenk,
-                    champion: champions.None
+                    champion: champions.Diana
                 },
-                win: false
-            }
-        },
-        R3: {
-            T1: {
-                P1: {
-                    name: players.Z,
-                    champion: champions.None
-                },
-                P2: {
-                    name: players.Franco,
-                    champion: champions.None
-                },
-                win: false
-            },
-            T2: {
-                P1: {
-                    name: players.Chrome,
-                    champion: champions.None
-                },
-                P2: {
-                    name: players.Blaenk,
-                    champion: champions.None
-                },
-                win: false
+                win: true
             }
         }
     }
@@ -324,6 +307,9 @@ function calculateChampionStats() {
                 for (let player in teamData) {
                     let champion = teamData[player].champion;
 
+
+
+
                     // Initialize champion stats if it doesn't exist
                     if (!championStats[champion]) {
                         championStats[champion] = {total: 0, wins: 0, losses: 0};
@@ -333,9 +319,7 @@ function calculateChampionStats() {
                     championStats[champion].total++;
 
                     // Increment wins or losses
-                    if (team === 'T1' && isWin) {
-                        championStats[champion].wins++;
-                    } else if (team === 'T2' && !isWin) {
+                    if (isWin) {
                         championStats[champion].wins++;
                     } else {
                         championStats[champion].losses++;
@@ -390,7 +374,7 @@ function calculateChampionStats() {
 
     $('<h5>', {
         class: "col-3 text-center mb-3"
-    }).text("Winrate").appendTo(champRow)
+    }).text("WR in %").appendTo(champRow)
 
     sortedChampions.forEach(stat => {
 
