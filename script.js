@@ -6,10 +6,15 @@ let players = {
     BlackPearl: 'BlackPearl',
     Viictoriia: 'Viictoriia',
     Darfrost: 'Darfrost',
-    Koko: 'Koko'
+    Koko: 'Koko',
+    Z: 'Z',
+    Franco: 'Franco',
+    Chrome: 'Chrôme',
+    Blaenk: 'Blaenk'
 };
 
 let champions = {
+    None: '---',
     Camille: 'Camille',
     Ashe: 'Ashe',
     Garen: 'Garen',
@@ -152,6 +157,80 @@ let matches = {
                     champion: champions.Vayne
                 },
                 win: true
+            }
+        }
+    },
+    M3: {
+        R1: {
+            T1: {
+                P1: {
+                    name: players.Z,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.Franco,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.Chrome,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.Blaenk,
+                    champion: champions.None
+                },
+                win: false
+            }
+        },
+        R2: {
+            T1: {
+                P1: {
+                    name: players.Z,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.Franco,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.Chrome,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.Blaenk,
+                    champion: champions.None
+                },
+                win: false
+            }
+        },
+        R3: {
+            T1: {
+                P1: {
+                    name: players.Z,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.Franco,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.Chrome,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.Blaenk,
+                    champion: champions.None
+                },
+                win: false
             }
         }
     }
@@ -315,7 +394,7 @@ function calculateChampionStats() {
 
     sortedChampions.forEach(stat => {
 
-        if (stat.champion !== 'undefined') {
+        if (stat.champion !== 'undefined' && stat.champion !== '---') {
             $('<li>', {
                 class: "col-5" // Ensure list items are full-width for proper alignment
             }).append(
