@@ -162,7 +162,7 @@ function displayMatchResults() {
 
     for (let match in matches) {
         const card = $('<div>', {
-            class: "card my-3 col-11 p-0"
+            class: "card my-3 col-lg-11 col-12-sm ms-2 p-0"
         }).appendTo(row)
 
         $('<div>', {
@@ -179,15 +179,15 @@ function displayMatchResults() {
         }).appendTo(cardBody)
 
         let firstRound = matches[match].R1;
-        $('<h4>', {
+        $('<h5>', {
             class: "col-5 text-end"
         }).text(`${firstRound.T1.P1.name} & ${firstRound.T1.P2.name}`).appendTo(row1)
 
-        $('<h4>', {
+        $('<h5>', {
             class: "col-2"
         }).text("vs").appendTo(row1)
 
-        $('<h4>', {
+        $('<h5>', {
             class: "col-5 text-start"
         }).text(`${firstRound.T2.P1.name} & ${firstRound.T2.P2.name}`).appendTo(row1)
 
@@ -210,16 +210,16 @@ function displayMatchResults() {
                 class: "row mb-3 font-weight-bold"
             }).appendTo(cardBody)
 
-            $('<h5>', {
+            $('<p>', {
                 class: "col-5 text-end pe-5"
             }).text(`${roundData.T1.P1.champion} & ${roundData.T1.P2.champion}`).appendTo(row2)
 
-            $('<h1>', {
-                class: `col-2 badge p-1 ${(team1Win === 2 || team2Win === 2) ? 'text-bg-success' : 'text-bg-danger'}`,
+            $('<p>', {
+                class: `col-2 badge p-1 d-inline-flex align-items-center justify-content-center ${(team1Win === 2 || team2Win === 2) ? 'text-bg-success' : 'text-bg-danger'}`,
                 style: "font-size:18px"
             }).text(`${team1Win}:${team2Win}`).appendTo(row2)
 
-            $('<h5>', {
+            $('<p>', {
                 class: "col-5 text-start ps-5"
             }).text(`${roundData.T2.P1.champion} & ${roundData.T2.P2.champion}`).appendTo(row2)
         }
@@ -275,7 +275,13 @@ function calculateChampionStats() {
             wins: stats.wins,
             losses: stats.losses
         };
-    }).sort((a, b) => b.wins - a.wins);  // Sort by number of wins in descending order
+    }).sort((a, b) => {
+        if (b.wins !== a.wins) {
+            return b.wins - a.wins;
+        }
+        return b.winRate - a.winRate;
+    });
+
 
     const motherRow = $('#motherRow')
 
