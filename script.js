@@ -318,7 +318,7 @@ function calculateChampionStats() {
                 if (team === 'win') continue;  // Skip the 'win' property
 
                 let teamData = roundData[team];
-                let isWin = roundData.win;
+                let isWin = teamData.win;
 
                 // Process each player's data in the team
                 for (let player in teamData) {
