@@ -275,30 +275,6 @@ let matches = {
                 },
                 win: false
             }
-        },
-        R3: {
-            T1: {
-                P1: {
-                    name: players.Dahra,
-                    champion: champions.None
-                },
-                P2: {
-                    name: players.BlackDaddy,
-                    champion: champions.None
-                },
-                win: false
-            },
-            T2: {
-                P1: {
-                    name: players.Kamii,
-                    champion: champions.None
-                },
-                P2: {
-                    name: players.Chibrax,
-                    champion: champions.None
-                },
-                win: false
-            }
         }
     }
 }
