@@ -262,7 +262,7 @@ let matches = {
                     name: players.BlackDaddy,
                     champion: champions.Pantheon
                 },
-                win: false
+                win: true
             },
             T2: {
                 P1: {
