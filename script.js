@@ -7,10 +7,14 @@ let players = {
     Viictoriia: 'Viictoriia',
     Darfrost: 'Darfrost',
     Koko: 'Koko',
-    Z: 'Z',
+    Z: 'Takezo',
     Franco: 'Franco',
     Chrome: 'Chrôme',
-    Blaenk: 'Blaenk'
+    Blaenk: 'Blaenk',
+    Dahra: 'Dahra',
+    BlackDaddy: 'BlackDaddy',
+    Kamii: 'Kamii',
+    Shibrax: 'Shibrax'
 };
 
 let champions = {
@@ -216,6 +220,80 @@ let matches = {
                 win: true
             }
         }
+    },
+    M4: {
+        R1: {
+            T1: {
+                P1: {
+                    name: players.Dahra,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.BlackDaddy,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.Kamii,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.Shibrax,
+                    champion: champions.None
+                },
+                win: false
+            }
+        },
+        R2: {
+            T1: {
+                P1: {
+                    name: players.Dahra,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.BlackDaddy,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.Kamii,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.Shibrax,
+                    champion: champions.None
+                },
+                win: false
+            }
+        },
+        R3: {
+            T1: {
+                P1: {
+                    name: players.Dahra,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.BlackDaddy,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.Kamii,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.Shibrax,
+                    champion: champions.None
+                },
+                win: false
+            }
+        }
     }
 }
 
@@ -225,7 +303,7 @@ function displayMatchResults() {
     for (let match in matches) {
         const card = $('<div>', {
             class: "card my-3 col-lg-11 col-12-sm ms-2 p-0"
-        }).appendTo(row)
+        }).prependTo(row)
 
         $('<div>', {
             class: "card-header text-bg-tertiary"
