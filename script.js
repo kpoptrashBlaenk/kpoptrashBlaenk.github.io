@@ -14,7 +14,7 @@ let players = {
     Dahra: 'Dahra',
     BlackDaddy: 'BlackDaddy',
     Kamii: 'Kamii',
-    Shibrax: 'Shibrax'
+    Chibrax: 'Chibrax'
 };
 
 let champions = {
