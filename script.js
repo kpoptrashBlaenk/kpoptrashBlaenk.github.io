@@ -40,9 +40,11 @@ let champions = {
     Jax: 'Jax',
     Renekton: 'Renekton',
     Morgana: 'Morgana',
-    Diana: 'Diana'
-
-
+    Diana: 'Diana',
+    Malphite: 'Malphite',
+    Lucian: 'Lucian',
+    Jinx: 'Jinx',
+    Yone: 'Yone'
 }
 
 let matches = {
@@ -226,22 +228,22 @@ let matches = {
             T1: {
                 P1: {
                     name: players.Dahra,
-                    champion: champions.None
+                    champion: champions.Malphite
                 },
                 P2: {
                     name: players.BlackDaddy,
-                    champion: champions.None
+                    champion: champions.Jinx
                 },
-                win: false
+                win: true
             },
             T2: {
                 P1: {
                     name: players.Kamii,
-                    champion: champions.None
+                    champion: champions.Yone
                 },
                 P2: {
-                    name: players.Shibrax,
-                    champion: champions.None
+                    name: players.Chibrax,
+                    champion: champions.Lucian
                 },
                 win: false
             }
@@ -264,7 +266,7 @@ let matches = {
                     champion: champions.None
                 },
                 P2: {
-                    name: players.Shibrax,
+                    name: players.Chibrax,
                     champion: champions.None
                 },
                 win: false
@@ -288,7 +290,7 @@ let matches = {
                     champion: champions.None
                 },
                 P2: {
-                    name: players.Shibrax,
+                    name: players.Chibrax,
                     champion: champions.None
                 },
                 win: false
