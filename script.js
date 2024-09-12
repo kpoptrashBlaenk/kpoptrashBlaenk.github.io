@@ -44,7 +44,11 @@ let champions = {
     Malphite: 'Malphite',
     Lucian: 'Lucian',
     Jinx: 'Jinx',
-    Yone: 'Yone'
+    Yone: 'Yone',
+    Akali: 'Akali',
+    Pantheon: 'Pantheon',
+    Khazix: 'Khazix',
+    Galio: 'Galio'
 }
 
 let matches = {
@@ -252,22 +256,22 @@ let matches = {
             T1: {
                 P1: {
                     name: players.Dahra,
-                    champion: champions.None
+                    champion: champions.Akali
                 },
                 P2: {
                     name: players.BlackDaddy,
-                    champion: champions.None
+                    champion: champions.Pantheon
                 },
                 win: false
             },
             T2: {
                 P1: {
                     name: players.Kamii,
-                    champion: champions.None
+                    champion: champions.Khazix
                 },
                 P2: {
                     name: players.Chibrax,
-                    champion: champions.None
+                    champion: champions.Galio
                 },
                 win: false
             }
