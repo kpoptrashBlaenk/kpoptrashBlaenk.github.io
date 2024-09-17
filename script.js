@@ -48,7 +48,10 @@ let champions = {
     Akali: 'Akali',
     Pantheon: 'Pantheon',
     Khazix: 'Khazix',
-    Galio: 'Galio'
+    Galio: 'Galio',
+    Fizz: 'Fizz',
+    Jhin: 'Jhin',
+    Graves: 'Graves',
 }
 
 let matches = {
@@ -282,78 +285,51 @@ let matches = {
             T1: {
                 P1: {
                     name: players.Darfrost,
-                    champion: champions.None
+                    champion: champions.Galio
                 },
                 P2: {
                     name: players.Koko,
-                    champion: champions.None
+                    champion: champions.Graves
                 },
                 win: false
             },
             T2: {
                 P1: {
                     name: players.MorteKouilles,
-                    champion: champions.None
+                    champion: champions.Renekton
                 },
                 P2: {
                     name: players.Caviar,
-                    champion: champions.None
+                    champion: champions.Jhin
                 },
-                win: false
+                win: true
             }
         },
         R2: {
             T1: {
                 P1: {
                     name: players.Darfrost,
-                    champion: champions.None
+                    champion: champions.Nautilus
                 },
                 P2: {
                     name: players.Koko,
-                    champion: champions.None
+                    champion: champions.Akshan
                 },
                 win: false
             },
             T2: {
                 P1: {
                     name: players.MorteKouilles,
-                    champion: champions.None
+                    champion: champions.Fizz
                 },
                 P2: {
                     name: players.Caviar,
-                    champion: champions.None
+                    champion: champions.Jinx
                 },
-                win: false
-            }
-        },
-        R3: {
-            T1: {
-                P1: {
-                    name: players.Darfrost,
-                    champion: champions.None
-                },
-                P2: {
-                    name: players.Koko,
-                    champion: champions.None
-                },
-                win: false
-            },
-            T2: {
-                P1: {
-                    name: players.MorteKouilles,
-                    champion: champions.None
-                },
-                P2: {
-                    name: players.Caviar,
-                    champion: champions.None
-                },
-                win: false
+                win: true
             }
         }
     },
-}
-
-let futureMatches = {
     M6: {
         R1: {
             T1: {
@@ -428,6 +404,9 @@ let futureMatches = {
             }
         }
     },
+}
+
+let futureMatches = {
     M7: {
         R1: {
             T1: {
