@@ -1,7 +1,4 @@
 Need node-js for this:
-> node -v
-> npm -v
-
 > npm init vite@latest FOLDERNAME --template vue
 > Vue
 > TypeScript
