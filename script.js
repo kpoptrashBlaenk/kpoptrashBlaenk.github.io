@@ -52,6 +52,20 @@ let champions = {
     Fizz: 'Fizz',
     Jhin: 'Jhin',
     Graves: 'Graves',
+    Twitch: 'Twitch',
+    Braum: 'Braum',
+    Kindred: 'Kindred',
+    Alistar: 'Alistar',
+    Draven: 'Draven',
+    Nasus: 'Nasus',
+    Fiora: 'Fiora',
+    Kalista: 'Kalista',
+    Kennen: 'Kennen',
+    Sett: 'Sett',
+    Senna: 'Senna',
+    Fiddlesticks: 'Fiddlesticks'
+
+
 }
 
 let matches = {
@@ -335,46 +349,46 @@ let matches = {
             T1: {
                 P1: {
                     name: players.Chrome,
-                    champion: champions.None
+                    champion: champions.Twitch
                 },
                 P2: {
                     name: players.Blaenk,
-                    champion: champions.None
+                    champion: champions.Braum
                 },
                 win: false
             },
             T2: {
                 P1: {
                     name: players.Dahra,
-                    champion: champions.None
+                    champion: champions.Kindred
                 },
                 P2: {
                     name: players.BlackDaddy,
-                    champion: champions.None
+                    champion: champions.Alistar
                 },
-                win: false
+                win: true
             }
         },
         R2: {
             T1: {
                 P1: {
                     name: players.Chrome,
-                    champion: champions.None
+                    champion: champions.Draven
                 },
                 P2: {
                     name: players.Blaenk,
-                    champion: champions.None
+                    champion: champions.Nasus
                 },
-                win: false
+                win: true
             },
             T2: {
                 P1: {
                     name: players.Dahra,
-                    champion: champions.None
+                    champion: champions.Fiora
                 },
                 P2: {
                     name: players.BlackDaddy,
-                    champion: champions.None
+                    champion: champions.Kalista
                 },
                 win: false
             }
@@ -383,30 +397,27 @@ let matches = {
             T1: {
                 P1: {
                     name: players.Chrome,
-                    champion: champions.None
+                    champion: champions.Kennen
                 },
                 P2: {
                     name: players.Blaenk,
-                    champion: champions.None
+                    champion: champions.Sett
                 },
-                win: false
+                win: true
             },
             T2: {
                 P1: {
                     name: players.Dahra,
-                    champion: champions.None
+                    champion: champions.Senna
                 },
                 P2: {
                     name: players.BlackDaddy,
-                    champion: champions.None
+                    champion: champions.Fiddlesticks
                 },
                 win: false
             }
         }
     },
-}
-
-let futureMatches = {
     M7: {
         R1: {
             T1: {
@@ -481,6 +492,9 @@ let futureMatches = {
             }
         }
     },
+}
+
+let futureMatches = {
     M8: {
         R1: {
             T1: {
@@ -644,8 +658,6 @@ function calculateChampionStats() {
                 // Process each player's data in the team
                 for (let player in teamData) {
                     let champion = teamData[player].champion;
-
-
 
 
                     // Initialize champion stats if it doesn't exist
