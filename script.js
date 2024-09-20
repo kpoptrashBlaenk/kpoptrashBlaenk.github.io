@@ -63,9 +63,11 @@ let champions = {
     Kennen: 'Kennen',
     Sett: 'Sett',
     Senna: 'Senna',
-    Fiddlesticks: 'Fiddlesticks'
-
-
+    Fiddlesticks: 'Fiddlesticks',
+    Ezreal: 'Ezreal',
+    Blitzcrank: 'Blitzcrank',
+    Darius: 'Darius',
+    Ziggs: 'Ziggs,'
 }
 
 let matches = {
@@ -423,22 +425,22 @@ let matches = {
             T1: {
                 P1: {
                     name: players.BlackPearl,
-                    champion: champions.None
+                    champion: champions.Jax
                 },
                 P2: {
                     name: players.Viictoriia,
-                    champion: champions.None
+                    champion: champions.Draven
                 },
-                win: false
+                win: true
             },
             T2: {
                 P1: {
                     name: players.Anteffe,
-                    champion: champions.None
+                    champion: champions.Ezreal
                 },
                 P2: {
                     name: players.Nono,
-                    champion: champions.None
+                    champion: champions.Yasuo
                 },
                 win: false
             }
@@ -447,54 +449,51 @@ let matches = {
             T1: {
                 P1: {
                     name: players.BlackPearl,
-                    champion: champions.None
+                    champion: champions.Blitzcrank
                 },
                 P2: {
                     name: players.Viictoriia,
-                    champion: champions.None
+                    champion: champions.Jhin
                 },
                 win: false
             },
             T2: {
                 P1: {
                     name: players.Anteffe,
-                    champion: champions.None
+                    champion: champions.Garen
                 },
                 P2: {
                     name: players.Nono,
-                    champion: champions.None
+                    champion: champions.Jinx
                 },
-                win: false
+                win: true
             }
         },
         R3: {
             T1: {
                 P1: {
                     name: players.BlackPearl,
-                    champion: champions.None
+                    champion: champions.Darius
                 },
                 P2: {
                     name: players.Viictoriia,
-                    champion: champions.None
+                    champion: champions.Ziggs
                 },
                 win: false
             },
             T2: {
                 P1: {
                     name: players.Anteffe,
-                    champion: champions.None
+                    champion: champions.Jhin
                 },
                 P2: {
                     name: players.Nono,
-                    champion: champions.None
+                    champion: champions.Seraphine
                 },
-                win: false
+                win: true
             }
         }
     },
-}
-
-let futureMatches = {
     M8: {
         R1: {
             T1: {
@@ -569,6 +568,10 @@ let futureMatches = {
             }
         },
     }
+}
+
+let futureMatches = {
+
 }
 
 function displayMatchResults() {
