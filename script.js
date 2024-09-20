@@ -67,7 +67,7 @@ let champions = {
     Ezreal: 'Ezreal',
     Blitzcrank: 'Blitzcrank',
     Darius: 'Darius',
-    Ziggs: 'Ziggs,'
+    Ziggs: 'Ziggs'
 }
 
 let matches = {
