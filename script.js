@@ -1117,8 +1117,12 @@ function calculateChampionStats() {
         if (b.wins !== a.wins) {
             return b.wins - a.wins;
         }
-        return b.winRate - a.winRate;
+        if (b.winRate !== a.winRate) {
+            return b.winRate - a.winRate;
+        }
+        return a.losses - b.losses;
     });
+
 
 
     const motherRow = $('#motherRow')
