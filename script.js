@@ -1,4 +1,5 @@
 let players = {
+    None: '---',
     Anteffe: 'Anteffe',
     BlackDaddy: 'BlackDaddy',
     BlackPearl: 'BlackPearl',
@@ -18,6 +19,7 @@ let players = {
 }
 
 let champions = {
+    None: '---',
     Aatrox: 'Aatrox',
     Akali: 'Akali',
     Akshan: 'Akshan',
@@ -48,11 +50,11 @@ let champions = {
     Lucian: 'Lucian',
     Lux: 'Lux',
     Malphite: 'Malphite',
+    Mordekaiser: 'Mordekaiser',
     Morgana: 'Morgana',
     Mundo: 'Mundo',
     Nasus: 'Nasus',
     Nautilus: 'Nautilus',
-    None: '---',
     Pantheon: 'Pantheon',
     Renekton: 'Renekton',
     Senna: 'Senna',
@@ -67,7 +69,8 @@ let champions = {
     Xayah: 'Xayah',
     Yasuo: 'Yasuo',
     Yone: 'Yone',
-    Ziggs: 'Ziggs'
+    Ziggs: 'Ziggs',
+    Zyra: 'Zyra',
 }
 
 let matches = {
@@ -567,11 +570,430 @@ let matches = {
                 win: false
             }
         },
-    }
+    },
+    M9: {
+        R1: {
+            T1: {
+                P1: {
+                    name: players.Darfrost,
+                    champion: champions.Malphite
+                },
+                P2: {
+                    name: players.Koko,
+                    champion: champions.Annie
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.Anteffe,
+                    champion: champions.Pantheon
+                },
+                P2: {
+                    name: players.Nono,
+                    champion: champions.Renekton
+                },
+                win: true
+            }
+        },
+        R2: {
+            T1: {
+                P1: {
+                    name: players.Darfrost,
+                    champion: champions.Mordekaiser
+                },
+                P2: {
+                    name: players.Koko,
+                    champion: champions.Zyra
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.Anteffe,
+                    champion: champions.Lucian
+                },
+                P2: {
+                    name: players.Nono,
+                    champion: champions.Jax
+                },
+                win: true
+            }
+        },
+    },
+    M12: {
+        R1: {
+            T1: {
+                P1: {
+                    name: players.MorteKouilles,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.Caviar,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.Chrome,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.Blaenk,
+                    champion: champions.None
+                },
+                win: false
+            }
+        },
+        R2: {
+            T1: {
+                P1: {
+                    name: players.MorteKouilles,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.Caviar,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.Chrome,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.Blaenk,
+                    champion: champions.None
+                },
+                win: false
+            }
+        },
+        R3: {
+            T1: {
+                P1: {
+                    name: players.MorteKouilles,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.Caviar,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.Chrome,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.Blaenk,
+                    champion: champions.None
+                },
+                win: false
+            }
+        }
+    },
 }
 
 let futureMatches = {
-
+    M10: {
+        R1: {
+            T1: {
+                P1: {
+                    name: players.Dahra,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.BlackDaddy,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            }
+        },
+        R2: {
+            T1: {
+                P1: {
+                    name: players.Dahra,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.BlackDaddy,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            }
+        },
+        R3: {
+            T1: {
+                P1: {
+                    name: players.Dahra,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.BlackDaddy,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            }
+        }
+    },
+    M11: {
+        R1: {
+            T1: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            }
+        },
+        R2: {
+            T1: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            }
+        },
+        R3: {
+            T1: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            }
+        },
+    },
+    M13: {
+        R1: {
+            T1: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            }
+        },
+        R2: {
+            T1: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            }
+        },
+        R3: {
+            T1: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            }
+        },
+    },
+    M14: {
+        R1: {
+            T1: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            }
+        },
+        R2: {
+            T1: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            }
+        },
+        R3: {
+            T1: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            },
+            T2: {
+                P1: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                P2: {
+                    name: players.None,
+                    champion: champions.None
+                },
+                win: false
+            }
+        },
+    },
 }
 
 function displayMatchResults() {
