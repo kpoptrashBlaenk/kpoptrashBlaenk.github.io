@@ -70,7 +70,14 @@ let champions = {
     Yasuo: 'Yasuo',
     Yone: 'Yone',
     Ziggs: 'Ziggs',
-    Zyra: 'Zyra',
+    Zyra: 'Zyra', Jayce: 'Jayce',
+    Brand: 'Brand',
+    Vex: 'Vex',
+    Lillia: 'Lillia',
+    Jarvan: 'Jarvan IV',
+    Shyvana: 'Shyvana',
+    Nunu: 'Nunu'
+
 }
 
 let matches = {
@@ -626,22 +633,22 @@ let matches = {
             T1: {
                 P1: {
                     name: players.MorteKouilles,
-                    champion: champions.None
+                    champion: champions.Yone
                 },
                 P2: {
                     name: players.Caviar,
-                    champion: champions.None
+                    champion: champions.Shen
                 },
-                win: false
+                win: true
             },
             T2: {
                 P1: {
                     name: players.Chrome,
-                    champion: champions.None
+                    champion: champions.Ezreal
                 },
                 P2: {
                     name: players.Blaenk,
-                    champion: champions.None
+                    champion: champions.Jayce
                 },
                 win: false
             }
@@ -650,48 +657,48 @@ let matches = {
             T1: {
                 P1: {
                     name: players.MorteKouilles,
-                    champion: champions.None
+                    champion: champions.Brand
                 },
                 P2: {
                     name: players.Caviar,
-                    champion: champions.None
+                    champion: champions.Vex
                 },
                 win: false
             },
             T2: {
                 P1: {
                     name: players.Chrome,
-                    champion: champions.None
+                    champion: champions.Lillia
                 },
                 P2: {
                     name: players.Blaenk,
-                    champion: champions.None
+                    champion: champions.Jarvan
                 },
-                win: false
+                win: true
             }
         },
         R3: {
             T1: {
                 P1: {
                     name: players.MorteKouilles,
-                    champion: champions.None
+                    champion: champions.Akali
                 },
                 P2: {
                     name: players.Caviar,
-                    champion: champions.None
+                    champion: champions.Shyvana
                 },
                 win: false
             },
             T2: {
                 P1: {
                     name: players.Chrome,
-                    champion: champions.None
+                    champion: champions.Urgot
                 },
                 P2: {
                     name: players.Blaenk,
-                    champion: champions.None
+                    champion: champions.Nunu
                 },
-                win: false
+                win: true
             }
         }
     },
