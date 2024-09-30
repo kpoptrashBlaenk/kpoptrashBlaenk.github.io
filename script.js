@@ -27,6 +27,7 @@ let champions = {
     Annie: 'Annie',
     Ashe: 'Ashe',
     Blitzcrank: 'Blitzcrank',
+    Brand: 'Brand',
     Braum: 'Braum',
     Camille: 'Camille',
     Darius: 'Darius',
@@ -40,13 +41,16 @@ let champions = {
     Galio: 'Galio',
     Garen: 'Garen',
     Graves: 'Graves',
+    Jarvan: 'Jarvan IV',
     Jax: 'Jax',
+    Jayce: 'Jayce',
     Jhin: 'Jhin',
     Jinx: 'Jinx',
     Kalista: 'Kalista',
     Kennen: 'Kennen',
     Khazix: 'Khazix',
     Kindred: 'Kindred',
+    Lillia: 'Lillia',
     Lucian: 'Lucian',
     Lux: 'Lux',
     Malphite: 'Malphite',
@@ -55,29 +59,28 @@ let champions = {
     Mundo: 'Mundo',
     Nasus: 'Nasus',
     Nautilus: 'Nautilus',
+    Nunu: 'Nunu',
     Pantheon: 'Pantheon',
     Renekton: 'Renekton',
     Senna: 'Senna',
     Seraphine: 'Seraphine',
     Sett: 'Sett',
     Shen: 'Shen',
+    Shyvana: 'Shyvana',
+    Soraka: 'Soraka',
     Swain: 'Swain',
     Twitch: 'Twitch',
     Urgot: 'Urgot',
     Vayne: 'Vayne',
     Veigar: 'Veigar',
+    Vex: 'Vex',
     Xayah: 'Xayah',
+    Xin: 'Xin Zhao',
     Yasuo: 'Yasuo',
     Yone: 'Yone',
+    Warwick: 'Warwick',
     Ziggs: 'Ziggs',
-    Zyra: 'Zyra', Jayce: 'Jayce',
-    Brand: 'Brand',
-    Vex: 'Vex',
-    Lillia: 'Lillia',
-    Jarvan: 'Jarvan IV',
-    Shyvana: 'Shyvana',
-    Nunu: 'Nunu'
-
+    Zyra: 'Zyra',
 }
 
 let matches = {
@@ -509,22 +512,22 @@ let matches = {
             T1: {
                 P1: {
                     name: players.Z,
-                    champion: champions.None
+                    champion: champions.Kalista
                 },
                 P2: {
                     name: players.Franco,
-                    champion: champions.None
+                    champion: champions.Warwick
                 },
-                win: false
+                win: true
             },
             T2: {
                 P1: {
                     name: players.Kamii,
-                    champion: champions.None
+                    champion: champions.Thresh
                 },
                 P2: {
                     name: players.Chibrax,
-                    champion: champions.None
+                    champion: champions.Xayah
                 },
                 win: false
             }
@@ -533,50 +536,26 @@ let matches = {
             T1: {
                 P1: {
                     name: players.Z,
-                    champion: champions.None
+                    champion: champions.Yone
                 },
                 P2: {
                     name: players.Franco,
-                    champion: champions.None
+                    champion: champions.Xin
                 },
-                win: false
+                win: true
             },
             T2: {
                 P1: {
                     name: players.Kamii,
-                    champion: champions.None
+                    champion: champions.Akali
                 },
                 P2: {
                     name: players.Chibrax,
-                    champion: champions.None
+                    champion: champions.Soraka
                 },
                 win: false
             }
-        },
-        R3: {
-            T1: {
-                P1: {
-                    name: players.Z,
-                    champion: champions.None
-                },
-                P2: {
-                    name: players.Franco,
-                    champion: champions.None
-                },
-                win: false
-            },
-            T2: {
-                P1: {
-                    name: players.Kamii,
-                    champion: champions.None
-                },
-                P2: {
-                    name: players.Chibrax,
-                    champion: champions.None
-                },
-                win: false
-            }
-        },
+        }
     },
     M9: {
         R1: {
